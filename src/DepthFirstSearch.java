@@ -21,10 +21,10 @@ public class DepthFirstSearch {
     private void dsfHelper(Vertex root) {
         stack.add(root);
         root.setVisited(true);
-
+        System.out.println("\nDepthFirstSearch: ");
         while (!stack.isEmpty()) {
             Vertex actualVertex = stack.pop();
-            System.out.println(actualVertex);
+            System.out.print(actualVertex + " ");
             for (Vertex v : actualVertex.getAdjacencyList()) {
                 if (!v.isVisited()) {
                     v.setVisited(true);
