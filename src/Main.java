@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         bsfTest();
         dfsTest();
+        dsfRecursiveTest();
     }
 
     private static void dfsTest() {
@@ -15,6 +16,11 @@ public class Main {
     private static void bsfTest() {
         BreadthFirstSearch breadthFirstSearch = new BreadthFirstSearch();
         breadthFirstSearch.bfs(getTestData());
+    }
+
+    private static void dsfRecursiveTest() {
+        DepthFirstSearchRecursive depthFirstSearchRecursive = new DepthFirstSearchRecursive();
+        depthFirstSearchRecursive.dfs(getTestData());
     }
 
     private static List<Vertex> getTestData() {
