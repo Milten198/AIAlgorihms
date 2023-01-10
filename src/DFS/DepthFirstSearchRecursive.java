@@ -1,3 +1,7 @@
+package DFS;
+
+import utils.Vertex;
+
 import java.util.List;
 
 public class DepthFirstSearchRecursive {

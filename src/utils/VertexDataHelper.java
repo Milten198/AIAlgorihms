@@ -1,3 +1,7 @@
+package utils;
+
+import utils.Vertex;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -39,5 +43,16 @@ public class VertexDataHelper {
         h.addNeighbor(g);
 
         return list;
+    }
+
+    public static int[][] getMazeData() {
+        return new int[][]{
+                {0, 0, 1, 0, 0, 0},
+                {1, 0, 1, 0, 1, 0},
+                {1, 0, 0, 0, 1, 0},
+                {1, 1, 1, 0, 1, 0},
+                {1, 1, 1, 0, 1, 0},
+                {1, 1, 1, 1, 0, 0}
+        };
     }
 }
